@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +31,8 @@
     <section id="add-note" class="absolute hidden flex-col items-center justify-center left-1/2 -translate-x-1/2 trans w-96 h-72 bg-slate-600 rounded-3xl shadow-2xl">
         <h5 class="font-bold text-2xl text-slate-200">Write Your Note</h5>
         <textarea name="note_area" id="text_note" cols="30" rows="10" class="w-4/5 h-40 mt-5 rounded-xl outline-none resize-none p-5 color1bg font-bold"></textarea>
-        <button id="add_button_note" class="transition-all ease-in-out duration-500 hover:bg-slate-800 hover:rounded-lg  flex justify-center items-center w-11 h-11 bg-slate-700 rounded-[22px] mt-3"><i class="fa-solid fa-plus color1 text-4xl rounded-full"></i></button>
+        <button type="button" id="add_button_note" class="transition-all ease-in-out duration-500 hover:bg-slate-800 hover:rounded-lg  flex justify-center items-center w-11 h-11 bg-slate-700 rounded-[22px] mt-3"><i class="fa-solid fa-plus color1 text-4xl rounded-full"></i></button>
+        <div id="box_required" class="hidden justify-center items-center w-96 h-40 mt-3 bg-red-400 font-bold text-2xl"><p>Please, Write some text.</p></div>
     </section>
 </body>
 </html>
