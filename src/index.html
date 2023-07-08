@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <script defer src="main.js"></script>
+    <title>NotePad</title>
+</head>
+<body class="bg-slate-800 h-screen flex justify-center items-center font-grotesk">
+    <section id="notepad" class="w-5/12 h-3/4 bg-slate-300 rounded-3xl shadow-lg shadow-black">
+        <header class="w-full h-24 bg-slate-600 rounded-t-2xl shadow-lg flex justify-between items-center">
+            
+            <i class="fa-solid fa-book text-4xl ml-12" style="color: #ebebebc0;"></i>
+            <h3 class="color1 font-extrabold text-3xl mr-12">NotePad</h3>
+        </header>
+        <main>
+            <section id="notessect">
+                <div class="notes"></div>
+                <div id="empty-note" class="flex justify-between items-center h-16 border-b-4 border-slate-600 ml-3 mr-3"><h3 class="ml-5 font-bold text-lg">Add Your Note</h3><button id="add_button" class="flex justify-center items-center w-9 h-9 hover:bg-slate-200 hover:shadow-xl rounded-full transition-all mr-5"><i class="fa-solid fa-plus text-slate-600 text-4xl rounded-full"></i></button></div>
+            </section>
+
+        </main>
+        
+    </section>
+    <section id="add-note" class="absolute hidden flex-col items-center justify-center left-1/2 -translate-x-1/2 trans w-96 h-72 bg-slate-600 rounded-3xl shadow-2xl">
+        <h5 class="font-bold text-2xl text-slate-200">Write Your Note</h5>
+        <textarea name="note_area" id="text_note" cols="30" rows="10" class="w-4/5 h-40 mt-5 rounded-xl outline-none resize-none p-5 color1bg font-bold"></textarea>
+        <button id="add_button_note" class="transition-all ease-in-out duration-500 hover:bg-slate-800 hover:rounded-lg  flex justify-center items-center w-11 h-11 bg-slate-700 rounded-[22px] mt-3"><i class="fa-solid fa-plus color1 text-4xl rounded-full"></i></button>
+    </section>
+</body>
+</html>

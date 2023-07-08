@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .font-grotesk{
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .color1{
+        color: #ebebebc0;
+    }
+    .color1bg{
+        background-color: #ebebebc0;
+    }
+    .rotate{
+        
+    }
+}
