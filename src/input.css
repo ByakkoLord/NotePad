@@ -16,4 +16,10 @@
     .custonh {
         min-height: 4rem;
     }
+    .rotatez{
+        transform: rotate(45deg);
+    }
+    .unclickable {
+        pointer-events: none;
+      }
 }
